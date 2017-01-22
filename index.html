@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/engine.js"></script>
+    <script src="js/game.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/game.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="menu">
+      <h3>
+        Wanna play some Pong?
+      </h3>
+      <p class="lead">Psst: W and S to move, yo.</p>
+      <button id="start-btn" class="btn btn-default">
+        mmmk
+      </button>
+    </div>
+    <div id="game" class="hidden">
+      <div id="scores">
+        <span id="player-score">0</span>
+        <span id="ai-score">0</span>
+      </div>
+      <div id="player-paddle" class="paddle"></div>
+      <div id="ai-paddle" class="paddle"></div>
+      <div id="ball"></div>
+    </div>
+    <div id="game-over" class="hidden">
+      <h3>
+        Game over bruh.
+      </h3>
+      <button id="restart" class="btn btn-default">
+        Once more, with feeling?
+      </button>
+    </div>
+  </body>
+</html>
